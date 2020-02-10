@@ -2,7 +2,7 @@ const axios = require('axios')
 
 
 const fetcher = axios.create({
-   baseURL: `http://localhost:3001`,
+   baseURL: `/`,
    withCredentials: true
 });
 
@@ -16,7 +16,7 @@ const getQuery = (query) => {
 
 async function getDataFromServer(type, handleSuccess, query) {
    try {
-      const response = await fetcher.get(`http://localhost:3001/apartments?${getQuery(query)}`)
+      const response = await fetcher.get(`/apartments?${getQuery(query)}`)
       const apartments = response.data;
       return handleSuccess(apartments)
    } catch (error) {
@@ -27,7 +27,7 @@ async function getDataFromServer(type, handleSuccess, query) {
 
 async function addApartments(data) {
    try {
-      await fetcher.post(`http://localhost:3001/apartments`, data)
+      await fetcher.post(`/apartments`, data)
       return
    } catch (error) {
       throw new Error(`get apartment failed with error: ${error}`)
@@ -35,7 +35,7 @@ async function addApartments(data) {
 }
 async function getCurrentApartment(byId) {
    try {
-      const currentApartment = await fetcher.get(`http://localhost:3001/apartments/${byId}`);
+      const currentApartment = await fetcher.get(`/apartments/${byId}`);
       return currentApartment.data
    } catch (error) {
       return error
@@ -61,7 +61,7 @@ async function loginUser(data) {
 
 async function signUpUser(data) {
    try {
-      const signUp = await fetcher.post(`http://localhost:3001/users`, data);
+      const signUp = await fetcher.post(`/users`, data);
       return signUp
    } catch (error) {
       return error
@@ -70,7 +70,7 @@ async function signUpUser(data) {
 
 async function getCities() {
    try {
-      const sucsess = await fetcher.get(`http://localhost:3001/cities`);
+      const sucsess = await fetcher.get(`/cities`);
       return sucsess.data.cities
    } catch (error) {
       return error
@@ -79,7 +79,7 @@ async function getCities() {
 
 async function deleteApartment(byId) {
    try {
-      const sucsess = await fetcher.delete(`http://localhost:3001/apartments?id=${byId}`);
+      const sucsess = await fetcher.delete(`/apartments?id=${byId}`);
       return sucsess.data.cities
    } catch (error) {
       return error
@@ -88,7 +88,7 @@ async function deleteApartment(byId) {
 
 async function editApartments(data) {
    try {
-      await fetcher.put(`http://localhost:3001/apartments`, data)
+      await fetcher.put(`/apartments`, data)
       return;
    } catch (error) {
       throw new Error(`edit apartment failed with error: ${error}`)
@@ -97,7 +97,7 @@ async function editApartments(data) {
 
 async function getCountries() {
    try {
-      const sucsess = await fetcher.get(`http://localhost:3001/countries`);
+      const sucsess = await fetcher.get(`/countries`);
       return sucsess.data.countries;
    } catch (error) {
       return error
@@ -106,7 +106,7 @@ async function getCountries() {
 
 async function getAllUsers() {
    try {
-      const sucsess = await fetcher.get(`http://localhost:3001/users`);
+      const sucsess = await fetcher.get(`/users`);
       return sucsess.data.users
    } catch (error) {
       return error
