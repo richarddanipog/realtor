@@ -14,18 +14,16 @@ const getQuery = (query) => {
    return result
 }
 
-// async function getDataFromServer(type, handleSuccess, query) {
-//    try {
-//       const response = await fetcher.get(`http://localhost:3001/apartments?${getQuery(query)}`)
-//       const apartments = response.data;
-//       return handleSuccess(apartments)
-//    } catch (error) {
-//       throw new Error(`get apartment failed with error: ${error}`)
-//    }
-// }
-async function getDataFromServer(type, handleSuccess, query){
-   
+async function getDataFromServer(type, handleSuccess, query) {
+   try {
+      const response = await fetcher.get(`http://localhost:3001/apartments?${getQuery(query)}`)
+      const apartments = response.data;
+      return handleSuccess(apartments)
+   } catch (error) {
+      throw new Error(`get apartment failed with error: ${error}`)
+   }
 }
+
 
 async function addApartments(data) {
    try {
