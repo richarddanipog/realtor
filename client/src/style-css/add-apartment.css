@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.add-apartments{
+    border:1px solid #8b9dc3;
+    background-color: #363636;
+    color: #ffffff;
+    width: 60%;
+    height: auto;
+}
+.add-apartments input[type=submit]{
+  background-color:#8b9dc3;
+  border:1px solid #8b9dc3
+}
+
+.profile-tool{
+  position:absolute;
+  top:-25px;
+  left: 15px;
+  color:grey;
+  cursor: pointer;
+}
+
+.delete-apartment-icon:hover{
+  color: red;
+}
+.edit-apartment-icon:hover{
+  color:orange;
+}
+
+
+#sidebar-wrapper {
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.5rem;
+  font-size: 1.5rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+html{
+  scroll-behavior: smooth;
+}
+
+.user-tool div{
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 1rem;
+  width:70%;
+  font-family: 'Bebas Neue', cursive;
+  font-size:20px;
+}
+.user-tool a{
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 1rem;
+  width:70%;
+  font-family: 'Bebas Neue', cursive;
+  font-size:20px;
+}
+.user-tool a:hover{
+  background-color: lightgrey
+}
+
+#user-details span{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 20px;
+}

@@ -1,0 +1,24 @@
+.footer{
+    margin: 0 30px;
+}
+.footer label{
+    padding: .2rem 10px;
+    font-size: 30px;
+    margin-right: 10px;
+}
+@media (max-width: 767px) {
+    .footer{
+        text-align: center;
+    }
+}
+.footer-about{
+    margin: 0;
+    padding: 10px 0;
+}
+.footer-about ul li{
+    margin-right: 15px;
+    list-style: none;
+}
+.footer-about a{
+    color: black;
+}

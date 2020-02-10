@@ -1,0 +1,97 @@
+
+
+
+
+
+
+
+
+
+.logo {
+    height: 50px;
+    width: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1005px) {
+    .active {
+        display: none;
+    }
+
+    .active-burger {
+        display: block;
+    }
+
+    .navigation {
+        position: fixed;
+        left: 0;
+        flex-direction: column;
+        background: white;
+        height: 100vh;
+        z-index: 100;
+        padding: 50px 0 0;
+        transition: transform 0.6s;
+        transform: translateX(-100%);
+        box-shadow: 0 0 2px;
+    }
+
+    .inner-menu {
+        position: relative;
+        border: 1px solid;
+    }
+
+    .inner-menu li {
+
+    }
+
+    .navigation.nav-open {
+        transform: translateX(0);
+    }
+
+    .sections {
+        width: 100%;
+        border-bottom: 1px solid grey;
+        padding: 1.5em;
+    }
+}
+
+.change .bar1 {
+    transform: rotate(-45deg) translate(-7px, 4px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: rotate(45deg) translate(-8px, -7px);
+}
+
+.login{
+    top:30px;
+    right: 30px;
+}
+.login label{
+    cursor: pointer;
+}
