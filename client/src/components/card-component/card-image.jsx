@@ -20,11 +20,11 @@ class CardImage extends React.Component {
       let backgroundImg;
       if (this.state.hover && images) {
          backgroundImg = {
-            backgroundImage: `url(http://localhost:3001/${images.split(",")[Math.floor(Math.random() * images.split(",").length)]})`,
+            backgroundImage: `url(/${images.split(",")[Math.floor(Math.random() * images.split(",").length)]})`,
             transition: ' background-image .6s'
          }
       } else {
-         backgroundImg = { backgroundImage: `url(http://localhost:3001/${img})`, transition: ' background-image .6s' }
+         backgroundImg = { backgroundImage: `url(/${img})`, transition: ' background-image .6s' }
       }
 
       return (

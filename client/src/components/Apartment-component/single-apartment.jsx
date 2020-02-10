@@ -16,7 +16,7 @@ class Apartment extends React.Component {
    };
 
    componentDidMount() {
-      axios.get(`http://localhost:3001/apartments/${this.props.match.params.id}`)
+      axios.get(`/apartments/${this.props.match.params.id}`)
          .then(sucsess => this.setState({
             apartment: sucsess.data[0][0],
             apartmentLocation: sucsess.data[1][0][0],

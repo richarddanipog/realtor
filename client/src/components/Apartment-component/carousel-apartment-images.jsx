@@ -13,7 +13,7 @@ class ApartmentCarouselImages extends React.Component {
    galleyImagesApt = (images) => {
       return images.split(",").map((img, i) => {
          return <Carousel.Item key={i}>
-            <img className={'single-image w-100'} src={"http://localhost:3001/" + img} alt={'apartments'} />
+            <img className={'single-image w-100'} src={"/" + img} alt={'apartments'} />
          </Carousel.Item>
       })
    };

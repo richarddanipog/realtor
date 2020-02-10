@@ -49,14 +49,14 @@ class Apartment extends React.Component {
 
                         <div className={'row images m-0'} >
                             <div className={'col-sm-12 col-md-6 p-0 overflow-hidden'} style={{ height: '50vh' }}>
-                                <img height={'100%'} width={'100%'} src={`http://localhost:3001/${images[0]}`} alt={""} />
+                                <img height={'100%'} width={'100%'} src={`/${images[0]}`} alt={""} />
                             </div>
                             <div className={'col-sm-12 col-md-6 p-0'}>
                                 <div className={'row m-0'}>
-                                    <div className={'col-6 p-0 overflow-hidden'} style={{ height: '25vh' }}><img height={'100%'} width={'100%'} src={`http://localhost:3001/${images[1]}`} alt={""} /></div>
-                                    <div className={'col-6 p-0 overflow-hidden'} style={{ height: '25vh' }}><img height={'100%'} width={'100%'} src={`http://localhost:3001/${images[2]}`} alt={""} /></div>
-                                    <div className={'col-6 p-0 overflow-hidden'} style={{ height: '25vh' }}><img height={'100%'} width={'100%'} src={`http://localhost:3001/${images[3]}`} alt={""} /></div>
-                                    <div className={'col-6 p-0 overflow-hidden'} style={{ height: '25vh' }}><img height={'100%'} width={'100%'} src={`http://localhost:3001/${images[4]}`} alt={""} /></div>
+                                    <div className={'col-6 p-0 overflow-hidden'} style={{ height: '25vh' }}><img height={'100%'} width={'100%'} src={`/${images[1]}`} alt={""} /></div>
+                                    <div className={'col-6 p-0 overflow-hidden'} style={{ height: '25vh' }}><img height={'100%'} width={'100%'} src={`/${images[2]}`} alt={""} /></div>
+                                    <div className={'col-6 p-0 overflow-hidden'} style={{ height: '25vh' }}><img height={'100%'} width={'100%'} src={`/${images[3]}`} alt={""} /></div>
+                                    <div className={'col-6 p-0 overflow-hidden'} style={{ height: '25vh' }}><img height={'100%'} width={'100%'} src={`/${images[4]}`} alt={""} /></div>
                                 </div>
                             </div>
                         </div>
