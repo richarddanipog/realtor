@@ -7,8 +7,8 @@ export default class MainSearchBox extends React.Component {
    render() {
       const { user, logOutUser, toggleUserMenu, activeUserMenu } = this.props;
       return (
-         <div style={{ height: '37rem' }} className={'mainSearchBox'}>
-            <video className={'videoWrapper'} height={'591px'} width={'100%'} style={{ objectFit: 'fill' }}
+         <div style={{ height: '100vh' }} className={'mainSearchBox'}>
+            <video className={'videoWrapper'} height={'100%'} width={'100%'} style={{ objectFit: 'fill' }}
                autoPlay={'on'} muted={'on'} loop={'loop'}>
                <source src={"../../images/houseTour.mp4"} type={"video/mp4"} />
             </video>
