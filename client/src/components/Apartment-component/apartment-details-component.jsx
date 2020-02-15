@@ -9,7 +9,7 @@ class ApartmentDetails extends React.Component {
             <div className={'container-fluid details'}>
                 <h2 className={'pt-3 pb-3'} style={{ fontWeight: 'bold' }}>$ {apartment.price} </h2>
                 <div className={'row mr-5'}>
-                    <div className={'col-6'}>
+                    <div className={'col-sm-12 col-lg-6'}>
                         <span>
                             <b>{apartment.number_of_bath}</b> bath <i className="fas fa-bath" />
                         </span>
